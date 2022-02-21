@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+   
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ symbol }}</td>
+                <td>{{ symbol.name }}</td>
+                <td>{{ symbol.price }}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+{% endblock %}
